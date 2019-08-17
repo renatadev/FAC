@@ -76,3 +76,29 @@ label:hover {
 #toggle {
     display: none;
 }
+
+/*------------------------------------
+          MEDIA QUERIES
+-------------------------------------*/
+
+@media only screen and (max-width: 767px) {
+/* Hamburger menu toggle */
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        background-color: #ddcce6;
+    }
+    .menu a {
+        display: block;
+        margin: 0;
+
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+/* End hamburger menu toggle */
