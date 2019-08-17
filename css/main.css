@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,400&display=swap');
+
 /*------------------------------------
               GENERAL
 -------------------------------------*/
@@ -5,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   height: 4000px;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   background-color: #EEE;
 }
