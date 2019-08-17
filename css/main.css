@@ -170,6 +170,56 @@ label:hover {
 }
 
 /*------------------------------------
+          ABOUT ME TYPEWRITER
+-------------------------------------*/
+.var-highlight{
+	color: #4900a1;
+}
+.string-highlight{
+	color: #9e6bdb;
+}
+
+#typewriter{
+		font-size: 2em;
+		/*margin: 0;*/
+		font-family: "Courier New";
+
+		&:after{
+			content: "|";
+			animation: blink 500ms linear infinite alternate;
+		}
+}
+
+#code {
+  width: auto;
+  height: 500px;
+  padding: 15px;
+  border: none;
+  margin: 0;
+}
+
+.blocktext {
+  margin-left: auto;
+  margin-right: auto;
+  width: 22em;
+}
+
+@-webkit-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+@keyframes blink{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+/*------------------------------------
           MEDIA QUERIES
 -------------------------------------*/
 
@@ -201,6 +251,9 @@ label:hover {
     }
     .banner .content p {
       font-size: 0.8em;
+    }
+    #typewriter {
+      font-size: 1.2em;
     }
 }
 
