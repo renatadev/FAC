@@ -77,7 +77,6 @@ label:hover {
     display: none;
 }
 
-
 /*------------------------------------
               BANNER
 -------------------------------------*/
@@ -106,15 +105,6 @@ label:hover {
   filter: opacity(70%);
   -webkit-filter: opacity(70%);
 
-}
-
-.bg {
-  /*
-  background:
-  	  linear-gradient(to right bottom,
-       rgba(144, 114, 210, 0.7),
-       rgba(245, 235, 255, 0.7));
-*/
 }
 
 /* Show up content */
