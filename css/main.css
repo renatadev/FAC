@@ -77,6 +77,82 @@ label:hover {
     display: none;
 }
 
+
+/*------------------------------------
+              BANNER
+-------------------------------------*/
+.banner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Make video full w and h */
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -100;
+
+  /* Add opacity effect */
+
+  filter: opacity(70%);
+  -webkit-filter: opacity(70%);
+
+}
+
+.bg {
+  /*
+  background:
+  	  linear-gradient(to right bottom,
+       rgba(144, 114, 210, 0.7),
+       rgba(245, 235, 255, 0.7));
+*/
+}
+
+/* Show up content */
+.banner .content {
+  position: relative;
+  z-index:-1;
+  max-width: 1000px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Style h1 content */
+.banner .content h1 {
+  text-align: center;
+  margin-top: 30%;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 5em;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.5em;
+  position: relative;
+  vertical-align: middle;
+}
+
+/* Style p content */
+.banner .content p {
+  font-size: 1.1em;
+  color: #2d2930;
+  letter-spacing: 0.2em;
+}
+
+.blocktext {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*------------------------------------
           MEDIA QUERIES
 -------------------------------------*/
