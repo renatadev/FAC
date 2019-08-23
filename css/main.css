@@ -129,6 +129,7 @@ label:hover {
   letter-spacing: 0.5em;
   position: relative;
   vertical-align: middle;
+  text-shadow: 2px 2px 5px #595959;
 }
 
 /* Style p content */
