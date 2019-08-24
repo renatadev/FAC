@@ -171,6 +171,30 @@ label:hover {
 }
 
 /*------------------------------------
+       CONTENT TITLE STYLES
+-------------------------------------*/
+h1 {
+  text-align: center;
+}
+
+.content-box{
+   padding: 60px 0 40px 0;
+}
+
+.content-title {
+    margin: 0 0 5px 0;
+  }
+
+.underline {
+    width: 35px;
+    height: 3px;
+    background-color: #b078de;
+    margin: 0px auto 0 auto;
+    padding-top: 0px;
+    margin-bottom: 40px;
+  }
+  
+/*------------------------------------
           ABOUT ME TYPEWRITER
 -------------------------------------*/
 .var-highlight{
