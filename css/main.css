@@ -351,6 +351,9 @@ h1 {
     #typewriter {
       font-size: 1.2em;
     }
+    .column {
+    width: 100%;
+    }
 }
 
 /* Tablets */
