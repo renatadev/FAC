@@ -295,7 +295,7 @@ h1, p {
 .fas p {
   color: black;
   text-align: center;
-  font-size: 15px;
+  font-size: 14px;
   margin-left: -10px;
   font-style: oblique;
   padding: 0px;
@@ -429,8 +429,9 @@ h1, p {
 
     .fas {
       padding: 10px;
-      font-size: 15px;
-      width: 30px;
+    }
+    .fas p {
+      font-size: 12px;
     }
 }
 
@@ -447,8 +448,6 @@ h1, p {
 
   .fas {
     padding: 15px;
-    font-size: 20px;
-    width: 30px;
   }
 }
 
@@ -462,3 +461,11 @@ h1, p {
   .banner .content p {
     font-size: 1.1em;
   }
+  .avatar {
+    width: 60%;
+    margin-left: 15%;
+  }
+  .fas {
+    font: 30px;
+  }
+}
