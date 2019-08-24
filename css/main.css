@@ -193,7 +193,7 @@ h1 {
     padding-top: 0px;
     margin-bottom: 40px;
   }
-  
+
 /*------------------------------------
           ABOUT ME TYPEWRITER
 -------------------------------------*/
@@ -242,6 +242,32 @@ h1 {
 @keyframes blink{
 	0%{opacity: 0;}
 	100%{opacity: 1;}
+}
+
+/*------------------------------------
+          SOCIAL BUTTONS
+-------------------------------------*/
+
+.fab {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  background: #b078de;
+  color: black;
+}
+
+.fab:hover {
+    opacity: 0.7;
+}
+
+.wrapper {
+  margin: auto;
+  width:100%;
+  text-align:center;
 }
 
 /*------------------------------------
