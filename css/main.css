@@ -360,9 +360,14 @@ h1 {
     #code {
       height: 300px;
     }
-    
+
     .column {
     width: 100%;
+    }
+
+    .avatar {
+      width: 50%;
+      margin-left: 16%;
     }
 }
 
