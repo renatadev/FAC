@@ -415,6 +415,12 @@ h1, p {
       width: 50%;
       margin-left: 16%;
     }
+
+    .fas {
+      padding: 10px;
+      font-size: 15px;
+      width: 30px;
+    }
 }
 
 /* Tablets */
@@ -426,6 +432,12 @@ h1, p {
   }
   .banner .content p {
     font-size: 1em;
+  }
+
+  .fas {
+    padding: 15px;
+    font-size: 20px;
+    width: 30px;
   }
 }
 
