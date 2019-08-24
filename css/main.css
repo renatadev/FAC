@@ -173,7 +173,7 @@ label:hover {
 /*------------------------------------
        CONTENT TITLE STYLES
 -------------------------------------*/
-h1 {
+h1, p {
   text-align: center;
 }
 
@@ -242,6 +242,52 @@ h1 {
 @keyframes blink{
 	0%{opacity: 0;}
 	100%{opacity: 1;}
+}
+
+/*------------------------------------
+       ABOUT ME CONTENT
+-------------------------------------*/
+
+/* my avatar */
+.avatar {
+  vertical-align: middle;
+  width: 50%;
+  margin-left: 25%;
+  border-radius: 50%;
+  padding: 30px;
+  align-items: center;
+  text-align: center;
+  background-color: #ceaaf0;
+  opacity: 10;
+}
+
+.avatar:hover {
+  background-color: transparent;
+  opacity: 0.9;
+}
+
+/* Hobbies icons */
+
+.fas {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: #b078de;
+}
+
+.fas:hover {
+    opacity: 0.7;
+}
+
+.fas p {
+  color: black;
+  text-align: center;
+  font-size: 15px;
+  margin-left: -10px;
+  font-style: oblique;
 }
 
 /*------------------------------------
