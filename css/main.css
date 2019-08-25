@@ -300,7 +300,86 @@ h1, p {
   font-style: oblique;
   padding: 0px;
 }
+/*------------------------------------
+              CAROUSEL
+-------------------------------------*/
+.mySlides {display: none}
+.mySlides img {vertical-align: middle;}
 
+/* Slideshow container */
+.slideshow-container {
+  object-fit: cover;
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-shadow: 3px 3px 5px #595959;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: #b078de;
+}
+
+.text {
+  color: white;
+  font-size: 5em;
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 3px 3px 5px #595959;
+}
+
+.text p {
+	font-size: 20px;
+    padding: 60px;
+    padding-top: 10px;
+    }
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
 /*------------------------------------
        ACHIEVEMENTS CARDS
 -------------------------------------*/
@@ -433,6 +512,15 @@ h1, p {
     .fas p {
       font-size: 12px;
     }
+    .text {
+      font-size: 3em;
+      margin-top: 5%;
+    }
+
+    .text p {
+      font-size: 10px;
+      padding-top: 0;
+    }
 }
 
 /* Tablets */
@@ -448,6 +536,18 @@ h1, p {
 
   .fas {
     padding: 15px;
+  }
+  .avatar {
+    width: 80%;
+    margin-left: 8%;
+  }
+  .text {
+    font-size: 4em;
+    margin-top: 5%;
+  }
+  .text p {
+    font-size: 15px;
+    padding-top: 0;
   }
 }
 
@@ -468,4 +568,13 @@ h1, p {
   .fas {
     font: 30px;
   }
+  .text {
+    font-size: 5em;
+    margin-top: 0;
+  }
+  .text p {
+  	font-size: 20px;
+    padding: 60px;
+    padding-top: 10px;
+    }
 }
