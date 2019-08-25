@@ -40,7 +40,7 @@ p {
 }
 
 .scroll {
-  background-color: #b078de;
+  background-color: rgba(176, 120, 222, 0.9);
 }
 
 .menu {
@@ -451,6 +451,44 @@ h1, p {
   text-align:center;
 }
 
+/*------------------------------------
+              FOOTER
+-------------------------------------*/
+#footer {
+  padding-bottom: 0;
+}
+#footer a {
+  text-decoration: none;
+}
+
+.fa {
+  padding: 0 10px 0 10px;
+  color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.me {
+  padding: 0 8px 0 8px;
+}
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgba(176, 120, 222, 0.7);
+   color: white;
+   text-align: center;
+   box-sizing: border-box;
+   height: 2.5rem
+   position: absolute;
+}
+
+#fac-logo {
+  margin: 0;
+}
 /*------------------------------------
           MEDIA QUERIES
 -------------------------------------*/
