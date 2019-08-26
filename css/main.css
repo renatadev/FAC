@@ -118,7 +118,7 @@ label:hover {
 /* Show up content */
 .banner .content {
   position: relative;
-  z-index:-1;
+  z-index:1;
   max-width: 1000px;
   height: 100%;
   margin: 0 auto;
@@ -312,6 +312,7 @@ h1, p {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  display: -webkit-box;
 }
 .overlay:target {
   visibility: visible;
@@ -517,6 +518,17 @@ h1, p {
   clear: both;
 }
 
+
+.bg {
+  background-color: lightgrey;
+  width: 40%;
+  border: 15px solid #b078de;
+  padding: 50px;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+  padding-left: 0px;
+}
 /*------------------------------------
           SOCIAL BUTTONS
 -------------------------------------*/
@@ -651,6 +663,12 @@ h1, p {
       font-size: 10px;
       padding-top: 0;
     }
+    #smaller p {
+        font-size: 13px;
+      }
+    p {
+      font-size: 13px;
+    }
 }
 
 /* Tablets */
@@ -678,6 +696,9 @@ h1, p {
   .text p {
     font-size: 15px;
     padding-top: 0;
+  }
+#smaller p {
+    font-size: 14px;
   }
 }
 
@@ -707,4 +728,13 @@ h1, p {
     padding: 60px;
     padding-top: 10px;
     }
+  p {
+    font-size: 18px;
+  }
+  #smaller p {
+      font-size: 16px;
+    }
+  .thanks a {
+    font-size: 12px;
+  }
 }
