@@ -1,5 +1,4 @@
 // ----- Navbar animation on scroll ----- //
-//Cross-browser scroll effect
 
 var myNav = document.getElementById("nav");
 
@@ -12,116 +11,61 @@ window.onscroll = function() {
   }
 };
 
-// ----- About me typewriter ----- //
-
-function setupTypewriter(t) {
-  var HTML = t.innerHTML;
-  t.innerHTML = "";
-
-  var cursorPosition = 0,
-    tag = "",
-    writingTag = false,
-    tagOpen = false,
-    typeSpeed = 100,
-    tempTypeSpeed = 0;
-
-  var type = function() {
-
-    if (writingTag === true) {
-        tag += HTML[cursorPosition];
-      }
-
-    if (HTML[cursorPosition] === "<") {
-        tempTypeSpeed = 0;
-        if (tagOpen) {
-          tagOpen = false;
-          writingTag = true;
-        } else {
-        tag = "";
-        tagOpen = true;
-        writingTag = true;
-        tag += HTML[cursorPosition];
-        }
-      }
-
-    if (!writingTag && tagOpen) {
-      tag.innerHTML += HTML[cursorPosition];
-    }
-
-    if (!writingTag && !tagOpen) {
-      if (HTML[cursorPosition] === " ") {
-          tempTypeSpeed = 0;
-      } else {
-        tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-        }
-        t.innerHTML += HTML[cursorPosition];
-        }
-        if (writingTag === true && HTML[cursorPosition] === ">") {
-            tempTypeSpeed = (Math.random() * typeSpeed) + 50;
-            writingTag = false;
-            if (tagOpen) {
-                var newSpan = document.createElement("span");
-                t.appendChild(newSpan);
-                newSpan.innerHTML = tag;
-                tag = newSpan.firstChild;
-            }
-        }
-
-        cursorPosition += 1;
-        if (cursorPosition < HTML.length - 1) {
-            setTimeout(type, tempTypeSpeed);
-        }
-    };
-  return {
-    type: type
-  };
-}
-
-var typer = document.getElementById('typewriter');
-typewriter = setupTypewriter(typewriter);
-typewriter.type();
-
-// ----- Carousel -----//
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-
-
 // ----- Carousel loop -----//
 
-var slideIndex = 0;
-showSlides();
+var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,5000);
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 7000); // Change image every 7 seconds
+function nextSlide() {
+    goToSlide(currentSlide+1);
 }
+
+function previousSlide() {
+    goToSlide(currentSlide-1);
+}
+
+function goToSlide(n) {
+    slides[currentSlide].className = 'slide';
+    currentSlide = (n+slides.length)%slides.length;
+    slides[currentSlide].className = 'slide showing';
+}
+
+// ----- Carousel play/pause -----//
+
+var playing = true;
+var pauseButton = document.getElementById('pause');
+
+function pauseSlideshow() {
+    pauseButton.innerHTML = 'Play';
+    playing = false;
+    clearInterval(slideInterval);
+}
+
+function playSlideshow() {
+    pauseButton.innerHTML = 'Pause';
+    playing = true;
+    slideInterval = setInterval(nextSlide,5000);
+}
+
+pauseButton.onclick = function() {
+    if(playing) {
+    pauseSlideshow();
+  } else {
+    playSlideshow();
+  }
+};
+
+// ----- Carousel next/prev -----//
+
+var next = document.getElementById('next');
+var previous = document.getElementById('previous');
+
+next.onclick = function() {
+    pauseSlideshow();
+    nextSlide();
+};
+previous.onclick = function() {
+    pauseSlideshow();
+    previousSlide();
+};
