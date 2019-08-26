@@ -11,6 +11,15 @@ window.onscroll = function() {
   }
 };
 
+// ----- About me avatar ----- //
+function hover(element) {
+  element.setAttribute('src', 'img/mebg.JPEG');
+}
+
+function unhover(element) {
+  element.setAttribute('src', 'img/renata.png');
+}
+
 // ----- Carousel loop -----//
 
 var slides = document.querySelectorAll('#slides .slide');
