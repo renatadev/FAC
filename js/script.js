@@ -37,13 +37,13 @@ var playing = true;
 var pauseButton = document.getElementById('pause');
 
 function pauseSlideshow() {
-    pauseButton.innerHTML = 'Play';
+    pauseButton.innerHTML = '&#x23ef;'; //play
     playing = false;
     clearInterval(slideInterval);
 }
 
 function playSlideshow() {
-    pauseButton.innerHTML = 'Pause';
+    pauseButton.innerHTML = ' &#x23f8;'; //pause
     playing = true;
     slideInterval = setInterval(nextSlide,5000);
 }

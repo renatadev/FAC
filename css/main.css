@@ -372,6 +372,18 @@ h1, p {
   background-color: #b078de;
 }
 
+/* Play-Pause button */
+#pause {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: #b078de;
+  margin-left: 50%;
+  margin-right: 50%;
+  font-size: 20px;
+}
+
+/* Text on carousel */
 .text {
   color: white;
   font-size: 5em;
