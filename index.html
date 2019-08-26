@@ -26,7 +26,7 @@
       <div class="menu">
           <a href="#banner">HOME</a>
           <a href="#code">ABOUT</a>
-          <a href="#achievements">ACHIEVEMENTS</a>
+          <a href="#achievements">MY JOURNEY</a>
           <a href="#why">WHY</a>
           <a href="#track-me">PROGRESS</a>
       </div>
@@ -72,13 +72,57 @@
     <img src="img/renata.png" alt="Avatar" class="avatar">
     <p class="hobbies">Things I like to do: </p>
 
-      <div class="wrapper">
-        <i class="fas fa-birthday-cake"><br><p>baking</p></i>
-        <i class="fas fa-skiing"><br><p>skiing</p></i>
-        <i class="fas fa-running"><br><p>running</p></i>
-        <i class="fas fa-plane-departure"><br><p>traveling</p></i>
-        <i class="fas fa-code"><br><p>  coding</p></i>
+    <div class="wrapper">
+        <a class="button" href="#popup1"><i class="fas fa-birthday-cake"><br><p>baking</p></i></a>
+          <div id="popup1" class="overlay">
+          <div class="popup">
+          <a class="close" href="#">&times;</a>
+            <div class="content">
+              <img src="img/baking.JPEG" width="400px">
+            </div>
+        </div>
       </div>
+
+        <a class="button" href="#popup2"><i class="fas fa-skiing"><br><p>skiing</p></i></a>
+          <div id="popup2" class="overlay">
+          <div class="popup">
+          <a class="close" href="#">&times;</a>
+            <div class="content">
+              <img src="img/ski.JPEG" width="400px">
+            </div>
+        </div>
+      </div>
+
+        <a class="button" href="#popup3"><i class="fas fa-running"><br><p>running</p></i></a>
+          <div id="popup3" class="overlay">
+          <div class="popup">
+          <a class="close" href="#">&times;</a>
+            <div class="content">
+              <img src="img/running.JPEG" width="400px">
+            </div>
+        </div>
+      </div>
+
+        <a class="button" href="#popup4"><i class="fas fa-plane-departure"><br><p>traveling</p></i></a>
+          <div id="popup4" class="overlay">
+          <div class="popup">
+          <a class="close" href="#">&times;</a>
+            <div class="content">
+              <img src="img/travel.JPEG" width="400px">
+            </div>
+        </div>
+      </div>
+
+        <a class="button" href="#popup5"><i class="fas fa-code"><br><p>coding</p></i></a>
+          <div id="popup5" class="overlay">
+          <div class="popup">
+          <a class="close" href="#">&times;</a>
+            <div class="content">
+              <img src="img/coding.JPEG" width="400px">
+            </div>
+        </div>
+      </div>
+    </div>
 
     </div>
 
@@ -97,65 +141,38 @@
     </div>
 
 
-  <!-- Carousel -->
-<!--
-  <div class="slideshow-container" style="box-sizing: border-box">
-
-    <div class="mySlides fade">
-      <img src="img/unodos.JPEG" style="width:100%">
-      <div class="text">CREATIVITY<p>I'm a very crafty person, I love creating new things with my own hands, and coding plays a big roll in boosting my creativity and allowing to express myself and my fresh ideas</p></div>
-    </div>
-
-    <div class="mySlides fade">
-      <img src="img/uno.JPEG" style="width:100%">
-      <div class="text">LEARNING<p>Coding is a never-ending learning journey, and that really excites me as I really enjoy learning new things and keeping myself updated with the latest technologies</p></div>
-    </div>
-
-    <div class="mySlides fade">
-      <img src="img/unodostres.JPEG" style="width:100%">
-      <div class="text">LANGUAGES<p>I absolutely love human languages - to say so, I speak 3 languages that allow me to understand multiple other languages. This ability has also given me the skills to pick up programming languages very quickly too!</p></div>
-    </div>
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  </div>
-  <br>
--->
-
+<!-- Carousel -->
 
 <div id="slides" class="slideshow-container" style="box-sizing: border-box">
+      <div class="mySlides slide showing fade">
+        <img src="img/unodos.JPEG" style="width:100%">
+        <div class="text">CREATIVITY<p>I'm a very crafty person, I love creating new things with my own hands, and coding plays a big roll in boosting my creativity and allowing to express myself and my fresh ideas</p></div>
+      </div>
 
-    <div class="mySlides slide showing fade">
-      <img src="img/unodos.JPEG" style="width:100%">
-      <div class="text">CREATIVITY<p>I'm a very crafty person, I love creating new things with my own hands, and coding plays a big roll in boosting my creativity and allowing to express myself and my fresh ideas</p></div>
+      <div class="mySlides slide fade">
+        <img src="img/uno.JPEG" style="width:100%">
+        <div class="text">LEARNING<p>Coding is a never-ending learning journey, and that really excites me as I really enjoy learning new things and keeping myself updated with the latest technologies</p></div>
+      </div>
+
+      <div class="mySlides slide fade">
+        <img src="img/unodostres.JPEG" style="width:100%">
+        <div class="text">LANGUAGES<p>I absolutely love human languages - to say so, I speak 3 languages that allow me to understand multiple other languages. This ability has also given me the skills to pick up programming languages very quickly too!</p></div>
+      </div>
+
+      <!-- Next/prev/pause buttons -->
+      <button class="controls prev" id="previous">&#10094;</button>
+      <button class="controls next" id="next">&#10095;</button>
+      <button class="controls pause" id="pause"> &#x23f8;</button>
     </div>
-
-    <div class="mySlides slide fade">
-      <img src="img/uno.JPEG" style="width:100%">
-      <div class="text">LEARNING<p>Coding is a never-ending learning journey, and that really excites me as I really enjoy learning new things and keeping myself updated with the latest technologies</p></div>
-    </div>
-
-    <div class="mySlides slide fade">
-      <img src="img/unodostres.JPEG" style="width:100%">
-      <div class="text">LANGUAGES<p>I absolutely love human languages - to say so, I speak 3 languages that allow me to understand multiple other languages. This ability has also given me the skills to pick up programming languages very quickly too!</p></div>
-    </div>
-
-    <button class="controls prev" id="previous">&#10094;</button>
-    <button class="controls next" id="next">&#10095;</button>
-
-    <button class="controls pause" id="pause"> &#x23f8;</button>
-  </div>
-
-  </div>
+</div>
 
 <!-- Achievements -->
   <div id="achievements" class="content-box">
-    <h1 class="content-title"> ACHIEVEMENTS </h1>
+    <h1 class="content-title"> MY JOURNEY </h1>
     <div class="underline"></div>
-    <p>Throughout my coding journey, there have been incredible things I've been able to create with my own hands, but two of my most biggest achievements
-    have been the projects I made during my time at <span class="purple">CodeFirst:Girls</span> courses. Both of these have been awarded as
-    <span class="purple">"Best Final Projects"</span> of the two cohort courses, and I thought it would be great to show you up my hard-work. Click on them to have a look!</p>
+    <p>Throughout my coding journey so far, there have been incredible things I've been able to create with my own hands, but two of my most proudest
+    projects were the ones I made during my time at the <span class="purple">CodeFirst:Girls</span> courses. Both of these received the
+    <span class="purple">"Best Final Projects"</span> award of the two cohort courses!!! And of course, I thought it would be great for you to see the <span class="purple">passion</span> and <span class="purple">hard-work</span> I put into these. Click on them to have a look!</p>
   </div>
 
   <div class="row">
@@ -201,10 +218,24 @@
      <a href="https://www.linkedin.com/in/renataguerraj/" target="_blank" class="fab fa-linkedin"></a>
    </div> <br><br>
 
+<!-- Pop up thank you -->
+
+<div class="wrapper">
+    <a class="button thanks" href="#popup6"><p>If you made it all the way to the bottom, please click here!</p></a>
+      <div id="popup6" class="overlay">
+      <div class="popup">
+      <a class="close" href="#">&times;</a>
+        <div class="content">
+          <h2>Thank you for your time!</h2>
+        </div>
+    </div>
+  </div>
+
 <!-- Footer -->
 <br>
 <div id="footer" class="footer">
-    <br><p>Coded with<a href="/" class="fa fa-heart" alt="love"></a>by <a class="me" href="https://github.com/renatajarmova" target="_blank">Renata</a> for : <br> <img id="fac-logo" src="img/fac-logo.svg" width="150px" height="150px"></p>
+    <br><p>Coded with<a href="/" class="fa fa-heart" alt="love"></a>by <a class="me" href="https://github.com/renatajarmova" target="_blank">Renata</a> for : <br>
+      <a href="https://www.foundersandcoders.com" target="_blank"><img id="fac-logo" src="img/fac-logo.svg" width="150px" height="150px"></a></p>
 </div>
 
 <!-- Linking my JS file -->
