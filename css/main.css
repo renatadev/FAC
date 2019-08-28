@@ -666,6 +666,12 @@ h1, p {
     p {
       font-size: 13px;
     }
+    #slides {
+      font-size: 10px;
+    }
+    #slides p {
+      font-size: 6px;
+    }
 }
 
 /* Tablets */
@@ -695,6 +701,12 @@ h1, p {
     padding-top: 0;
   }
 #smaller p {
+    font-size: 14px;
+  }
+  #slides {
+    font-size: 18px;
+  }
+  #slides p {
     font-size: 14px;
   }
 }
