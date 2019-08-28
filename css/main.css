@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Charmonman:700&display=swap');
 
 /*------------------------------------
               GENERAL
@@ -6,7 +7,7 @@
 body {
   margin: 0;
   padding: 0;
-  height: 4000px;
+  height: 100%;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   background-color: #EEE;
@@ -24,6 +25,13 @@ p {
   padding: 0px 50px 0px 50px;
 }
 
+hr {
+  width: 90%;
+}
+
+.italic {
+  font-style: oblique;
+}
 /*------------------------------------
               NAVBAR
 -------------------------------------*/
@@ -220,11 +228,6 @@ h1, p {
 		font-size: 2em;
 		/*margin: 0;*/
 		font-family: "Courier New";
-
-		&:after{
-			content: "|";
-			animation: blink 500ms linear infinite alternate;
-		}
 }
 
 #code {
@@ -239,21 +242,6 @@ h1, p {
   margin-left: auto;
   margin-right: auto;
   width: 22em;
-}
-
-@-webkit-keyframes blink{
-	0%{opacity: 0;}
-	100%{opacity: 1;}
-}
-
-@-moz-keyframes blink{
-	0%{opacity: 0;}
-	100%{opacity: 1;}
-}
-
-@keyframes blink{
-	0%{opacity: 0;}
-	100%{opacity: 1;}
 }
 
 /*------------------------------------
@@ -324,13 +312,15 @@ h1, p {
 }
 .popup {
   margin: 70px auto;
-  padding: 20px;
+  padding: 40px;
+  height: 400px;
   background: #fff;
   border-radius: 5px;
   width: 30%;
   position: relative;
   transition: all 2s ease-in-out;
 }
+
 .popup .close {
   position: absolute;
   top: 20px;
@@ -343,8 +333,7 @@ h1, p {
   text-shadow: 3px 3px 6px #fff;
 }
 .popup .content {
-  max-height: 30%;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .thanks {
@@ -478,7 +467,7 @@ h1, p {
   .prev, .next,.text {font-size: 11px}
 }
 /*------------------------------------
-       ACHIEVEMENTS CARDS
+       PROJECTS CARDS
 -------------------------------------*/
 
 .card {
@@ -580,18 +569,22 @@ h1, p {
 
 .me {
   padding: 0 8px 0 8px;
+  font-size: 22px;
+  color: black;
+  font-family: 'Charmonman', cursive;
 }
 
 .footer {
    left: 0;
    bottom: 0;
+   top: 40px;
    width: 100%;
    background-color: rgba(176, 120, 222, 0.7);
    color: white;
    text-align: center;
    box-sizing: border-box;
-   height: 2.5rem
-   position: absolute;
+   height: 250px;
+   position: relative;
 }
 
 #fac-logo {
