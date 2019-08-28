@@ -621,7 +621,7 @@ h1, p {
 
   .banner .content h1 {
       margin-top: 55%;
-      font-size: 3em;
+      font-size: 2.8em;
     }
 
     .banner .content p {
@@ -629,7 +629,7 @@ h1, p {
     }
 
     #typewriter {
-      font-size: 1.2em;
+      font-size: 1em;
     }
 
     #code {
@@ -682,6 +682,12 @@ h1, p {
     }
     #p6 {
       font-size: 12px;
+    }
+    .blocktext {
+      width: 19px;
+    }
+    .banner video {
+      display: block;
     }
 }
 

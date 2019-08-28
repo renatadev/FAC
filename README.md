@@ -1,6 +1,6 @@
 # My FAC application!
 
-Hello everyone! I'm **Renata Guerra.** and I welcome you to my FAC website application!
+Hello everyone! I'm **Renata Guerra** and I welcome you to my FAC website application!
 
 ## What is FAC?
 FAC is a London-based nonprofit organisation that runs a highly selective 16/18 week intensive Full Stack JavaScript programming bootcamp.
@@ -17,6 +17,6 @@ If you're also interested on applying, visit the [FAC website](https://www.found
 
 ------------------------------------------------------
 
-This project was the result of my hard work and passion for joining **Founders&Coders**, I really hope you like it :) 
+This project was the result of my hard work and passion for joining **Founders&Coders**, I really hope you like it :)
 
-You can access my website application by clicking [here.](-to be updated-)
+You can access my website application by clicking [here.](https://renatajarmova.github.io/FAC/)
