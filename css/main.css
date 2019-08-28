@@ -672,6 +672,17 @@ h1, p {
     #slides p {
       font-size: 6px;
     }
+    ul li {
+      font-size: 12px;
+    }
+    .popup {
+      width: 300px;
+      padding-top: 80px;
+      padding-bottom: 0px;
+    }
+    #p6 {
+      font-size: 12px;
+    }
 }
 
 /* Tablets */
@@ -709,6 +720,14 @@ h1, p {
   #slides p {
     font-size: 14px;
   }
+  .popup {
+    width: 300px;
+    padding-top: 80px;
+    padding-bottom: 0px;
+  }
+  #p6 {
+    font-size: 12px;
+  }
 }
 
 /* Desktop */
@@ -745,5 +764,8 @@ h1, p {
     }
   .thanks a {
     font-size: 12px;
+  }
+  #slides p {
+    font-size: 16px;
   }
 }
