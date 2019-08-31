@@ -218,16 +218,16 @@ h1, p {
           ABOUT ME TYPEWRITER
 -------------------------------------*/
 .var-highlight{
-	color: #4900a1;
+  color: #4900a1;
 }
 .string-highlight{
-	color: #9e6bdb;
+  color: #9e6bdb;
 }
 
 #typewriter{
-		font-size: 2em;
-		/*margin: 0;*/
-		font-family: "Courier New";
+	font-size: 2em;
+	/*margin: 0;*/
+	font-family: "Courier New";
 }
 
 #code {
@@ -280,7 +280,7 @@ h1, p {
 }
 
 .fas:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fas p {
@@ -337,9 +337,48 @@ h1, p {
 }
 
 .thanks {
-    text-decoration: none;
-    color: #7c7080;
-    font-size: 12px;
+  text-decoration: none;
+  color: #7c7080;
+  font-size: 12px;
+}
+
+/*------------------------------------
+      ABOUT ME TOOLTIPS(POPUPS)
+-------------------------------------*/
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #b078de;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #b078de transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 /*------------------------------------
@@ -357,29 +396,29 @@ h1, p {
 }
 
 #slides {
-    width: 100%;
-    height:100%;
-    list-style-type: none;
+  width: 100%;
+  height:100%;
+  list-style-type: none;
 }
 
 .slide {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    opacity: 0;
-    z-index: -1;
-    color: #fff;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  opacity: 0;
+  z-index: -1;
+  color: #fff;
 
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
 }
 
 .showing {
-    opacity: 1;
-    z-index: -1;
+  opacity: 1;
+  z-index: -1;
 }
 
 .controls {
@@ -441,9 +480,9 @@ h1, p {
 
 .text p {
 	font-size: 20px;
-    padding: 60px;
-    padding-top: 10px;
-    }
+  padding: 60px;
+  padding-top: 10px;
+}
 
 /* Fading animation */
 .fade {
@@ -564,7 +603,7 @@ h1, p {
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .me {
@@ -575,16 +614,16 @@ h1, p {
 }
 
 .footer {
-   left: 0;
-   bottom: 0;
-   top: 40px;
-   width: 100%;
-   background-color: rgba(176, 120, 222, 0.7);
-   color: white;
-   text-align: center;
-   box-sizing: border-box;
-   height: 250px;
-   position: relative;
+  left: 0;
+  bottom: 0;
+  top: 40px;
+  width: 100%;
+  background-color: rgba(176, 120, 222, 0.7);
+  color: white;
+  text-align: center;
+  box-sizing: border-box;
+  height: 250px;
+  position: relative;
 }
 
 #fac-logo {
@@ -714,7 +753,7 @@ h1, p {
     font-size: 15px;
     padding-top: 0;
   }
-#smaller p {
+  #smaller p {
     font-size: 14px;
   }
   #slides {
