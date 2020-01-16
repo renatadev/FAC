@@ -19,4 +19,4 @@ If you're also interested on applying, visit the [FAC website](https://www.found
 
 This project was the result of my hard work and passion for joining **Founders&Coders**, I really hope you like it :)
 
-You can access my website by clicking [here.](https://renatajarmova.github.io/FAC/)
+You can access my website by clicking [here.](https://renatadev.github.io/FAC/)
